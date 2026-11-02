@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Minibeast Finder</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="screen on" id="q1"><h1>Minibeast Finder</h1><p>Does your minibeast have legs?</p>
+<button onclick="go('q2')">Yes</button><button class="no" onclick="go('a1')">No</button></div>
+<div class="screen" id="q2"><h1>Count the legs</h1>
+<button onclick="go('a2')">6 legs</button><button onclick="go('a3')">8 legs</button><button onclick="go('a4')">14 legs</button></div>
+<div class="screen" id="a1"><h1>Earthworm</h1><p>Worms mix leaves into the soil, feeding the tree.</p>
+<button onclick="window.open('https://en.wikipedia.org/wiki/Earthworm')">Learn more</button><button class="no" onclick="go('q1')">Start again</button></div>
+<div class="screen" id="a2"><h1>Insect</h1><p>Six legs means it's an insect, like a ladybird or ant.</p><button class="no" onclick="go('q1')">Start again</button></div>
+<div class="screen" id="a3"><h1>Spider</h1><p>Spiders eat insects that damage leaves.</p><button class="no" onclick="go('q1')">Start again</button></div>
+<div class="screen" id="a4"><h1>Woodlouse</h1><p>Woodlice recycle dead wood and leaves.</p>
+<button onclick="window.open('https://en.wikipedia.org/wiki/Woodlouse')">Learn more</button><button class="no" onclick="go('q1')">Start again</button></div>
+<script src="code.js"></script></body></html>
